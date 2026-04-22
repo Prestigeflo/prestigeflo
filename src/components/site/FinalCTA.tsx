@@ -24,12 +24,13 @@ export function FinalCTA() {
             One call. Thirty minutes. We'll map exactly what to automate first and what it's worth to your bottom line — whether you hire us or not.
           </p>
 
-          <a
-            href="#contact-form"
+          <button
+            type="button"
+            onClick={openBooking}
             className="mt-8 inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gold-gradient text-black font-medium tracking-wide shadow-gold hover:shadow-gold-soft transition-all"
           >
             Book a Call <ArrowRight className="w-4 h-4" />
-          </a>
+          </button>
 
           <div className="mt-12 space-y-3 text-silver/70 text-sm">
             <div className="flex items-center gap-3">
