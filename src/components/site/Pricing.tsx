@@ -1,5 +1,6 @@
 import { Check, ArrowRight } from "lucide-react";
 import { SectionHeader } from "./Services";
+import { useBooking } from "./BookingProvider";
 
 const features = [
   "Custom AI system designed and built end-to-end",
@@ -11,6 +12,7 @@ const features = [
 ];
 
 export function Pricing() {
+  const { open: openBooking } = useBooking();
   return (
     <section id="pricing" className="py-28 bg-background relative overflow-hidden">
       <div className="absolute -inset-x-20 top-1/2 h-[500px] -translate-y-1/2 opacity-50 pointer-events-none"
