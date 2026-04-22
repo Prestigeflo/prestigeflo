@@ -9,6 +9,7 @@ import { About } from "@/components/site/About";
 import { FinalCTA } from "@/components/site/FinalCTA";
 import { Footer } from "@/components/site/Footer";
 import { FloatingCTA } from "@/components/site/FloatingCTA";
+import { BookingProvider } from "@/components/site/BookingProvider";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -16,19 +17,21 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Nav />
-      <main>
-        <Hero />
-        <Pricing />
-        <Services />
-        <Process />
-        <About />
-        <FAQ />
-        <FinalCTA />
-      </main>
-      <Footer />
-      <FloatingCTA />
-    </div>
+    <BookingProvider>
+      <div className="min-h-screen bg-background text-foreground">
+        <Nav />
+        <main>
+          <Hero />
+          <Pricing />
+          <Services />
+          <Process />
+          <About />
+          <FAQ />
+          <FinalCTA />
+        </main>
+        <Footer />
+        <FloatingCTA />
+      </div>
+    </BookingProvider>
   );
 }
