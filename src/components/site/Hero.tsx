@@ -47,13 +47,14 @@ export function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <a
-              href="#contact"
+            <button
+              type="button"
+              onClick={openBooking}
               className="group inline-flex items-center gap-2 px-7 py-4 rounded-full bg-gold-gradient text-black font-medium tracking-wide shadow-gold hover:shadow-gold-soft transition-all hover:-translate-y-0.5"
             >
               Book a Free Strategy Call
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </button>
             <a
               href="#services"
               className="inline-flex items-center gap-2 px-7 py-4 rounded-full border border-gold/50 text-gold tracking-wide hover:bg-gold/10 transition-all"
