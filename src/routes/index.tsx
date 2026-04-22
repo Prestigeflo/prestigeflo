@@ -1,26 +1,38 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { TrustBar } from "@/components/site/TrustBar";
+import { Services } from "@/components/site/Services";
+import { Process } from "@/components/site/Process";
+import { Results } from "@/components/site/Results";
+import { Pricing } from "@/components/site/Pricing";
+import { FAQ } from "@/components/site/FAQ";
+import { About } from "@/components/site/About";
+import { FinalCTA } from "@/components/site/FinalCTA";
+import { Footer } from "@/components/site/Footer";
+import { FloatingCTA } from "@/components/site/FloatingCTA";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background text-foreground">
+      <Nav />
+      <main>
+        <Hero />
+        <TrustBar />
+        <Services />
+        <Process />
+        <Results />
+        <Pricing />
+        <About />
+        <FAQ />
+        <FinalCTA />
+      </main>
+      <Footer />
+      <FloatingCTA />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
