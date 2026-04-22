@@ -8,7 +8,7 @@ const faqs = [
   { q: "Do you offer refunds?", a: "If we haven't started the build, full refund. Once active, we don't refund completed work — but we'll make it right." },
   { q: "Is my data secure?", a: "We follow least-privilege access, encrypted credentials, isolated environments, and your data never trains third-party models. Full audit trail available." },
   { q: "What industries do you serve?", a: "Electricians." },
-  { q: "What's included in monthly maintenance?", a: "Uptime monitoring, model updates, integration patches, performance tuning, a monthly review call, and priority support for anything that breaks." },
+  { q: "What's included in monthly maintenance?", a: "Uptime monitoring, model updates, integration patches, performance tuning, and a monthly review call." },
 ];
 
 export function FAQ() {
