@@ -16,20 +16,20 @@ export function About() {
           </div>
         </div>
         <div className="md:col-span-3">
-          <div className="text-[10px] tracking-[0.4em] text-gold uppercase mb-4">The Founder</div>
+          <div className="text-[10px] tracking-[0.4em] text-gold uppercase mb-4">Who It's For</div>
           <h2 className="font-serif text-4xl sm:text-5xl text-foreground leading-tight">
-            Built by an operator. <span className="text-gold-gradient">For operators.</span>
+            Built for the ones who can't stop working to answer the phone.
           </h2>
+          <p className="mt-5 font-serif text-2xl sm:text-3xl text-gold-gradient leading-snug">
+            For tradies. For hustlers. For businesses that never sleep.
+          </p>
           <div className="mt-6 space-y-4 text-silver/75 leading-relaxed">
             <p>
-              PrestigeFlo Systems was founded after years of running operations at companies that grew faster than they could be managed. The pattern was always the same: smart owners, capable teams, and a thousand small leaks no one had time to fix.
-            </p>
-            <p>
-              We exist to close those leaks — quietly, permanently, and at a level of craft that most agencies don't bother with. No buzzwords, no bloat. Just systems that work, owned by you.
+              PrestigeFlo was built for business owners who are too busy doing the work to manage the calls. Every missed call is a missed job. We install AI voice agents that answer every call, qualify every lead, and book every appointment — 24/7, without you lifting a finger.
             </p>
           </div>
           <div className="mt-8 flex items-center gap-4 text-xs tracking-[0.25em] uppercase text-silver/50">
-            <span className="h-px w-10 bg-gold/40" /> Selective intake · 6 clients per quarter
+            <span className="h-px w-10 bg-gold/40" /> Never miss a call · Never lose a lead · Never stop working
           </div>
         </div>
       </div>
