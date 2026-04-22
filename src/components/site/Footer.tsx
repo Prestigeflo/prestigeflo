@@ -15,9 +15,6 @@ export function Footer() {
                 <div className="text-[10px] tracking-[0.3em] text-silver/60 uppercase">AI Agency</div>
               </div>
             </div>
-            <p className="mt-5 text-silver/60 text-sm max-w-sm leading-relaxed">
-              Custom AI systems for operators who refuse to stay stuck.
-            </p>
           </div>
 
           <div>
