@@ -44,7 +44,7 @@ export function Footer() {
                 </a>
               ))}
             </div>
-            <div className="mt-5 text-silver/60 text-sm">hello@prestigeflo.systems</div>
+            <div className="mt-5 text-silver/60 text-sm">admin@prestigeflo.com</div>
           </div>
         </div>
 
