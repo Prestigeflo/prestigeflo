@@ -16,7 +16,7 @@ export function FinalCTA() {
         <div>
           <div className="text-[10px] tracking-[0.4em] text-gold uppercase mb-5">Ready When You Are</div>
           <h2 className="font-serif text-5xl sm:text-6xl leading-[1.05] text-foreground">
-            Ready to put your business <span className="text-gold-gradient italic">on autopilot?</span>
+            Ready to put your business <span className="text-gold-gradient">on autopilot?</span>
           </h2>
           <p className="mt-6 text-silver/75 text-lg max-w-md leading-relaxed">
             One call. Thirty minutes. We'll map exactly what to automate first and what it's worth to your bottom line — whether you hire us or not.
@@ -30,8 +30,14 @@ export function FinalCTA() {
           </a>
 
           <div className="mt-12 space-y-3 text-silver/70 text-sm">
-            <div className="flex items-center gap-3"><Mail className="w-4 h-4 text-gold" /> hello@prestigeflo.systems</div>
-            <div className="flex items-center gap-3"><Phone className="w-4 h-4 text-gold" /> By appointment only</div>
+            <div className="flex items-center gap-3">
+              <Mail className="w-4 h-4 text-gold" />
+              <span>hello@prestigeflo.systems</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <Phone className="w-4 h-4 text-gold" />
+              <span>By appointment only</span>
+            </div>
           </div>
         </div>
 

@@ -18,7 +18,7 @@ export function About() {
         <div className="md:col-span-3">
           <div className="text-[10px] tracking-[0.4em] text-gold uppercase mb-4">The Founder</div>
           <h2 className="font-serif text-4xl sm:text-5xl text-foreground leading-tight">
-            Built by an operator. <span className="text-gold-gradient italic">For operators.</span>
+            Built by an operator. <span className="text-gold-gradient">For operators.</span>
           </h2>
           <div className="mt-6 space-y-4 text-silver/75 leading-relaxed">
             <p>
