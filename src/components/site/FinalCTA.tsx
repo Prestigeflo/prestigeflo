@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { ArrowRight, Mail, Phone, Building2, User, MessageSquare } from "lucide-react";
+import { useBooking } from "./BookingProvider";
 
 export function FinalCTA() {
+  const { open: openBooking } = useBooking();
   return (
     <section
       id="contact"
