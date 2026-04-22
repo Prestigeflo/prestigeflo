@@ -20,9 +20,9 @@ function Index() {
       <Nav />
       <main>
         <Hero />
+        <Pricing />
         <Services />
         <Process />
-        <Pricing />
         <About />
         <FAQ />
         <FinalCTA />

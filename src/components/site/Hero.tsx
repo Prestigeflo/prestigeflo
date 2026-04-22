@@ -125,7 +125,7 @@ export function Hero() {
 
                 <div className="mt-5 pt-4 border-t border-gold/15 flex items-center gap-2">
                   <div className="flex-1 text-[11px] text-silver/60">
-                    <span className="text-electric">●</span> n8n · OpenAI · GoHighLevel
+                    <span className="text-electric">●</span> All systems operational
                   </div>
                   <div className="text-[11px] text-gold">+12.4% wk</div>
                 </div>
