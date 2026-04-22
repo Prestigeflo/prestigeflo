@@ -32,7 +32,7 @@ export function FinalCTA() {
           <div className="mt-12 space-y-3 text-silver/70 text-sm">
             <div className="flex items-center gap-3">
               <Mail className="w-4 h-4 text-gold" />
-              <span>hello@prestigeflo.systems</span>
+              <span>admin@prestigeflo.com</span>
             </div>
             <div className="flex items-center gap-3">
               <Phone className="w-4 h-4 text-gold" />
