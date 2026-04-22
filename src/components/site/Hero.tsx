@@ -1,7 +1,9 @@
 import { ArrowRight, Play, Sparkles, Activity, Zap, TrendingUp } from "lucide-react";
 import logo from "@/assets/prestigeflo-logo.png";
+import { useBooking } from "./BookingProvider";
 
 export function Hero() {
+  const { open: openBooking } = useBooking();
   return (
     <section id="top" className="relative min-h-screen flex items-center overflow-hidden circuit-bg pt-28 pb-20">
       {/* Particles */}
