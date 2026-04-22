@@ -35,7 +35,7 @@ export function Hero() {
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight">
             <span className="text-gold-gradient">AI Systems</span>{" "}
             <span className="text-foreground">Built for Operators</span>{" "}
-            <span className="text-silver italic">Who Refuse to Stay Stuck.</span>
+            <span className="text-silver">Who Refuse to Stay Stuck.</span>
           </h1>
 
           <p className="mt-8 text-lg text-silver/80 max-w-xl leading-relaxed">
