@@ -67,13 +67,14 @@ export function Pricing() {
                   ))}
                 </ul>
 
-                <a
-                  href="#contact"
+                <button
+                  type="button"
+                  onClick={openBooking}
                   className="group flex items-center justify-center gap-2 w-full px-7 py-4 rounded-full bg-gold-gradient text-black font-medium tracking-wide shadow-gold hover:shadow-gold-soft transition-all"
                 >
                   Book Your Strategy Call
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </button>
 
                 <p className="text-center text-silver/55 text-xs mt-6">
                   Not sure if it's a fit? Let's talk first — no obligation.
