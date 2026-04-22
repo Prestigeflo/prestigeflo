@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
@@ -58,8 +58,9 @@
   --color-electric: var(--electric);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
-  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-serif: "Space Grotesk", system-ui, sans-serif;
   --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
 :root {
@@ -150,9 +151,13 @@
   .font-serif {
     font-family: var(--font-serif);
     font-feature-settings: "ss01", "ss02";
+    letter-spacing: -0.02em;
   }
   .font-sans {
     font-family: var(--font-sans);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
   }
 
   .text-gold-gradient {

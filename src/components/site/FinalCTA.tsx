@@ -30,8 +30,14 @@ export function FinalCTA() {
           </a>
 
           <div className="mt-12 space-y-3 text-silver/70 text-sm">
-            <div className="flex items-center gap-3"><Mail className="w-4 h-4 text-gold" /> hello@prestigeflo.systems</div>
-            <div className="flex items-center gap-3"><Phone className="w-4 h-4 text-gold" /> By appointment only</div>
+            <div className="flex items-center gap-3">
+              <Mail className="w-4 h-4 text-gold" />
+              <span>hello@prestigeflo.systems</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <Phone className="w-4 h-4 text-gold" />
+              <span>By appointment only</span>
+            </div>
           </div>
         </div>
 
