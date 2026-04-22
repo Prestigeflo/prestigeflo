@@ -1,5 +1,6 @@
 import { Check, ArrowRight } from "lucide-react";
 import { SectionHeader } from "./Services";
+import { useBooking } from "./BookingProvider";
 
 const features = [
   "Custom AI system designed and built end-to-end",
@@ -11,6 +12,7 @@ const features = [
 ];
 
 export function Pricing() {
+  const { open: openBooking } = useBooking();
   return (
     <section id="pricing" className="py-28 bg-background relative overflow-hidden">
       <div className="absolute -inset-x-20 top-1/2 h-[500px] -translate-y-1/2 opacity-50 pointer-events-none"
@@ -65,13 +67,14 @@ export function Pricing() {
                   ))}
                 </ul>
 
-                <a
-                  href="#contact"
+                <button
+                  type="button"
+                  onClick={openBooking}
                   className="group flex items-center justify-center gap-2 w-full px-7 py-4 rounded-full bg-gold-gradient text-black font-medium tracking-wide shadow-gold hover:shadow-gold-soft transition-all"
                 >
                   Book Your Strategy Call
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </button>
 
                 <p className="text-center text-silver/55 text-xs mt-6">
                   Not sure if it's a fit? Let's talk first — no obligation.
