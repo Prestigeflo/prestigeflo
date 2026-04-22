@@ -4,8 +4,6 @@ import { SectionHeader } from "./Services";
 
 const faqs = [
   { q: "How long does setup take?", a: "Most systems are fully built and deployed within 2–3 weeks of the discovery call. Complex multi-integration builds may take up to 4." },
-  { q: "What tools do you integrate with?", a: "Effectively anything with an API. Most builds use OpenAI, Anthropic, n8n, Make, Zapier, GoHighLevel, Airtable, HubSpot, Slack, and major CRMs — but we'll build to your stack." },
-  { q: "Do I own the system after?", a: "Yes. You own the build, the workflows, the prompts, the data. We document everything and hand it over. No lock-in." },
   { q: "What if I cancel?", a: "Cancel anytime with 30 days notice. The system keeps running — you keep ownership. Maintenance and optimization simply pause." },
   { q: "Do you offer refunds?", a: "If we haven't started the build, full refund. Once active, we don't refund completed work — but we'll make it right." },
   { q: "Is my data secure?", a: "We follow least-privilege access, encrypted credentials, isolated environments, and your data never trains third-party models. Full audit trail available." },
