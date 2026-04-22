@@ -40,13 +40,13 @@ export function Pricing() {
                 <div className="grid grid-cols-2 gap-4 mb-10 text-center">
                   <div className="rounded-xl border border-gold/20 bg-background/60 p-6">
                     <div className="text-[10px] tracking-[0.3em] text-silver/60 uppercase mb-2">Setup</div>
-                    <div className="font-serif text-4xl text-foreground">$1,250</div>
+                    <div className="font-serif text-4xl text-foreground">$1,250 <span className="text-base text-silver/60">AUD</span></div>
                     <div className="text-silver/60 text-xs mt-1">one-time</div>
                   </div>
                   <div className="rounded-xl border border-gold/40 bg-gold/5 p-6">
                     <div className="text-[10px] tracking-[0.3em] text-gold uppercase mb-2">Monthly</div>
-                    <div className="font-serif text-4xl text-gold-gradient">$997</div>
-                    <div className="text-silver/60 text-xs mt-1">recurring</div>
+                    <div className="font-serif text-4xl text-gold-gradient">$997 <span className="text-base text-silver/60 bg-clip-text">AUD</span></div>
+                    <div className="text-silver/60 text-xs mt-1">recurring / month</div>
                   </div>
                 </div>
 

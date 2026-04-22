@@ -29,12 +29,12 @@ export function Hero() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 animate-fade-up">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold/30 bg-gold/5 text-xs tracking-[0.25em] text-gold uppercase mb-8">
-            <Sparkles className="w-3.5 h-3.5" /> Private AI Systems · By Invitation
+            <Sparkles className="w-3.5 h-3.5" /> Currently Accepting New Clients
           </div>
 
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight">
             <span className="text-gold-gradient">AI Systems</span>{" "}
-            <span className="text-foreground">Built for Operators</span>{" "}
+            <span className="text-foreground">Built for Tradies</span>{" "}
             <span className="text-silver">Who Refuse to Stay Stuck.</span>
           </h1>
 
@@ -61,8 +61,6 @@ export function Hero() {
           </div>
 
           <div className="mt-12 flex items-center gap-6 text-xs tracking-[0.2em] uppercase text-silver/50">
-            <span>No retainers without results</span>
-            <span className="h-px w-8 bg-gold/40" />
             <span>Full system ownership</span>
           </div>
         </div>
