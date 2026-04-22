@@ -4,7 +4,7 @@ import { SectionHeader } from "./Services";
 const features = [
   "Custom AI system designed and built end-to-end",
   "Full integration with your existing tools and stack",
-  "Monthly maintenance and uptime guarantees",
+  "Monthly maintenance",
   "Monthly performance check-in and optimization call",
   "Priority support — direct line, not a ticket queue",
   "Ongoing system updates and new feature builds",
