@@ -54,14 +54,18 @@ function ContactForm() {
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
-    const data = Object.fromEntries(new FormData(e.currentTarget).entries());
+    const data = Object.fromEntries(new FormData(e.currentTarget).entries()) as Record<string, string>;
     try {
-      // Placeholder webhook — swap for GoHighLevel/Calendly later
-      await fetch("https://example.com/webhook", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      }).catch(() => {});
+      const subject = `New inquiry from ${data.name || "website"}`;
+      const body =
+        `Name: ${data.name || ""}\n` +
+        `Email: ${data.email || ""}\n` +
+        `Phone: ${data.phone || ""}\n` +
+        `Company: ${data.company || ""}\n\n` +
+        `What they want to automate:\n${data.message || ""}`;
+      window.location.href = `mailto:admin@prestigeflo.com?subject=${encodeURIComponent(
+        subject,
+      )}&body=${encodeURIComponent(body)}`;
       setSent(true);
     } finally {
       setLoading(false);
