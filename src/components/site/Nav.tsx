@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import logo from "@/assets/prestigeflo-logo.png";
+import { useBooking } from "./BookingProvider";
 
 const links = [
   { href: "#services", label: "Services" },
@@ -12,6 +13,7 @@ const links = [
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { open: openBooking } = useBooking();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -49,12 +51,13 @@ export function Nav() {
           ))}
         </nav>
 
-        <a
-          href="#contact"
+        <button
+          type="button"
+          onClick={openBooking}
           className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gold/50 text-gold text-sm tracking-wide hover:bg-gold-gradient hover:text-black hover:border-transparent hover:shadow-gold-soft transition-all"
         >
           Book a Call
-        </a>
+        </button>
 
         <button
           aria-label="Open menu"
@@ -84,13 +87,16 @@ export function Nav() {
                 {l.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              onClick={() => setOpen(false)}
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false);
+                openBooking();
+              }}
               className="mt-2 inline-flex justify-center px-5 py-3 rounded-full bg-gold-gradient text-black font-medium"
             >
               Book a Call
-            </a>
+            </button>
           </div>
         </div>
       )}
