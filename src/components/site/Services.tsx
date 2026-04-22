@@ -1,35 +1,20 @@
-import { Bot, Target, Workflow, Plug, CalendarClock, FileText } from "lucide-react";
+import { PhoneCall, CalendarClock, Target } from "lucide-react";
 
 const services = [
   {
-    icon: Bot,
-    title: "AI Customer Support Agents",
-    body: "24/7 agents trained on your knowledge base — answering, triaging, and escalating like your best rep, without the salary.",
+    icon: PhoneCall,
+    title: "24/7 AI Voice Agent",
+    body: "Answers every call in your business voice — day, night, weekends. No missed calls. No voicemail. No lost jobs.",
   },
   {
     icon: Target,
-    title: "Lead Qualification & Outreach",
-    body: "Inbound and outbound systems that score, message, and book qualified prospects directly into your calendar.",
-  },
-  {
-    icon: Workflow,
-    title: "Internal Workflow Automation",
-    body: "Quietly remove the manual handoffs draining your team — invoicing, onboarding, reporting, status updates.",
-  },
-  {
-    icon: Plug,
-    title: "Custom AI Integrations",
-    body: "Bespoke builds connecting OpenAI, Anthropic, n8n and the rest of your stack into one system that actually fits.",
+    title: "Lead Qualification",
+    body: "Every caller gets asked the right questions — job type, location, urgency, budget — so you only hear about the ones worth your time.",
   },
   {
     icon: CalendarClock,
-    title: "CRM & Calendar Automation",
-    body: "End the back-and-forth. Pipelines that update themselves, calendars that fill themselves, follow-ups that never miss.",
-  },
-  {
-    icon: FileText,
-    title: "AI-Powered Content Systems",
-    body: "Repeatable systems for proposals, posts, emails, and reports — generated in your voice, signed off in minutes.",
+    title: "Automated Booking",
+    body: "Qualified jobs go straight into your calendar with confirmation texts sent to the customer. You wake up to a booked day.",
   },
 ];
 
@@ -40,11 +25,11 @@ export function Services() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeader
           eyebrow="Services"
-          title="Six systems. One unfair advantage."
-          subtitle="Each engagement is custom — but most of what we ship falls into one of these six categories."
+          title="One system. Three things it does perfectly."
+          subtitle="Built around the AI voice agent that runs the front of your business — so you can stay on the tools."
         />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+        <div className="grid md:grid-cols-3 gap-6 mt-16">
           {services.map((s, i) => (
             <div
               key={s.title}
