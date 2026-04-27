@@ -56,7 +56,7 @@ export function BookingProvider({ children }: { children: ReactNode }) {
           aria-label="Book a strategy call"
         >
           <div
-            className="relative w-full max-w-3xl max-h-[92vh] rounded-2xl border border-gold/30 bg-surface shadow-elevated overflow-hidden flex flex-col"
+            className="relative w-full max-w-3xl h-[92vh] rounded-2xl border border-gold/30 bg-surface shadow-elevated overflow-hidden flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -73,12 +73,12 @@ export function BookingProvider({ children }: { children: ReactNode }) {
               <h3 className="font-serif text-3xl text-gold-gradient">Pick a time that works for you.</h3>
               <p className="mt-2 text-silver/70 text-sm">30 minutes. No pitch — just a plan.</p>
             </div>
-            <div className="flex-1 overflow-auto bg-background/40">
+            <div className="flex-1 min-h-0 overflow-auto bg-background/40">
               <iframe
                 src={CALENDAR_SRC}
                 title="Book a call"
-                style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "640px" }}
-                scrolling="no"
+                style={{ width: "100%", height: "100%", minHeight: "900px", border: "none", display: "block" }}
+                scrolling="yes"
                 id="Puj705HsEF3Ywv6bf60E_lovable"
               />
             </div>
