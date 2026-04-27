@@ -49,14 +49,13 @@ export function BookingProvider({ children }: { children: ReactNode }) {
       {children}
       {isOpen && (
         <div
-          className="fixed inset-0 z-[100] bg-background/85 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-up"
-          onClick={close}
+         className="fixed inset-0 z-[100] bg-background/85 backdrop-blur-sm flex items-start justify-center p-4 pt-8 animate-fade-up"
           role="dialog"
           aria-modal="true"
           aria-label="Book a strategy call"
         >
           <div
-            className="relative w-full max-w-3xl h-[92vh] rounded-2xl border border-gold/30 bg-surface shadow-elevated overflow-hidden flex flex-col"
+            className="relative w-full max-w-3xl h-[92vh] max-h-[92vh] rounded-2xl border border-gold/30 bg-surface shadow-elevated overflow-hidden flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             <button
