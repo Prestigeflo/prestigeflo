@@ -3,8 +3,8 @@ import { SectionHeader } from "./Services";
 import { useBooking } from "./BookingProvider";
 
 const features = [
-  "Custom AI system designed and built end-to-end",
-  "Full integration with your existing tools and stack",
+  "Custom AI receptionist designed and built for your practice",
+  "Full integration with your practice management software",
   "Monthly maintenance",
   "Monthly performance check-in and optimization call",
   "Priority support — direct line, not a ticket queue",
@@ -20,7 +20,7 @@ export function Pricing() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeader
           eyebrow="Engagement"
-          title="One package. Built for serious operators."
+          title="One package. Built for serious practices."
           subtitle="No tiers, no upsells, no surprise fees. Either we're a fit or we're not."
         />
 
@@ -36,7 +36,7 @@ export function Pricing() {
                   The Full System
                 </h3>
                 <p className="text-silver/70 text-center text-sm mb-10">
-                  Everything you need to put your business on autopilot.
+                  Everything you need to put your front desk on autopilot.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mb-10 text-center">
