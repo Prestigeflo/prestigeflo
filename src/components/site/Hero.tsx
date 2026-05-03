@@ -82,7 +82,7 @@ export function Hero() {
                     <img src={logo} alt="" className="w-9 h-9" />
                     <div>
                       <div className="text-[11px] tracking-[0.25em] text-silver/60 uppercase">Live System</div>
-                      <div className="text-sm text-foreground">PF Operator Console</div>
+                      <div className="text-sm text-foreground">PF Practice Console</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-1.5 text-[10px] text-gold tracking-widest">
@@ -92,8 +92,8 @@ export function Hero() {
 
                 <div className="grid grid-cols-3 gap-3 mb-5">
                   {[
-                    { icon: Activity, label: "Leads / 24h", value: "147" },
-                    { icon: Zap, label: "Avg Reply", value: "38s" },
+                    { icon: Activity, label: "Calls / 24h", value: "147" },
+                    { icon: Zap, label: "Avg Pickup", value: "2s" },
                     { icon: TrendingUp, label: "Booked", value: "23" },
                   ].map((s, i) => (
                     <div key={i} className="rounded-lg border border-gold/15 bg-background/40 p-3">
@@ -106,9 +106,9 @@ export function Hero() {
 
                 <div className="space-y-2.5">
                   {[
-                    { name: "Inbound qualified", v: 92 },
-                    { name: "Calendar synced", v: 76 },
-                    { name: "Follow-up sent", v: 88 },
+                    { name: "New patients screened", v: 92 },
+                    { name: "Appointments booked", v: 76 },
+                    { name: "Recall reminders sent", v: 88 },
                   ].map((row) => (
                     <div key={row.name}>
                       <div className="flex justify-between text-[11px] text-silver/70 mb-1">
