@@ -18,18 +18,18 @@ export function About() {
         <div className="md:col-span-3">
           <div className="text-[10px] tracking-[0.4em] text-gold uppercase mb-4">Who It's For</div>
           <h2 className="font-serif text-4xl sm:text-5xl text-foreground leading-tight">
-            Built for the ones who can't stop working to answer the phone.
+            Built for practices that can't afford another missed call.
           </h2>
           <p className="mt-5 font-serif text-2xl sm:text-3xl text-gold-gradient leading-snug">
-            For tradies. For hustlers. For businesses that never sleep.
+            For dentists. For practice owners. For teams chairside all day.
           </p>
           <div className="mt-6 space-y-4 text-silver/75 leading-relaxed">
             <p>
-              PrestigeFlo was built for business owners who are too busy doing the work to manage the calls. Every missed call is a missed job. We install AI voice agents that answer every call, qualify every lead, and book every appointment — 24/7, without you lifting a finger.
+              PrestigeFlo was built for dental practices where the front desk can't keep up. Every missed call is a missed patient — and a competitor's win. We install AI voice agents that answer every call, screen new patients, and book appointments straight into your practice management software — 24/7, without adding a single seat to payroll.
             </p>
           </div>
           <div className="mt-8 flex items-center gap-4 text-xs tracking-[0.25em] uppercase text-silver/50">
-            <span className="h-px w-10 bg-gold/40" /> Never miss a call · Never lose a lead · Never stop working
+            <span className="h-px w-10 bg-gold/40" /> Never miss a call · Never lose a patient · Never overwork your team
           </div>
         </div>
       </div>
