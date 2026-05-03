@@ -1,10 +1,10 @@
 import { SectionHeader } from "./Services";
 
 const steps = [
-  { n: "01", title: "Discovery Call", body: "We map your operations, identify the highest-leverage automations, and decide what to build first." },
-  { n: "02", title: "Custom Build", body: "We design and build your system end-to-end — integrations, agents, workflows, dashboards, the works." },
-  { n: "03", title: "Launch & Train", body: "We deploy, train your team, and document everything. You own the system the moment it goes live." },
-  { n: "04", title: "Ongoing Optimization", body: "Monthly tuning, performance reviews, and new automations as your business compounds." },
+  { n: "01", title: "Discovery Call", body: "We map your patient flow, your front desk bottlenecks, and the calls costing you the most — then decide what to build first." },
+  { n: "02", title: "Custom Build", body: "We design and build your AI receptionist end-to-end — practice management integration, voice agent, scripts, recall workflows, the works." },
+  { n: "03", title: "Launch & Train", body: "We deploy, train your team, and document everything. Your practice owns the system the moment it goes live." },
+  { n: "04", title: "Ongoing Optimization", body: "Monthly tuning, performance reviews, and new automations as your practice grows." },
 ];
 
 export function Process() {
