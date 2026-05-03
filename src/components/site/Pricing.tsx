@@ -56,6 +56,10 @@ export function Pricing() {
                   </div>
                 </div>
 
+                <p className="text-center text-gold/90 text-sm font-medium -mt-4 mb-10">
+                  Most practices recoup setup in the first week.
+                </p>
+
                 <ul className="space-y-3 mb-10">
                   {features.map((f) => (
                     <li key={f} className="flex items-start gap-3">

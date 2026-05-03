@@ -7,7 +7,6 @@ const faqs = [
   { q: "What if I cancel?", a: "Cancel anytime with 30 days notice. The system keeps running — you keep ownership. Maintenance and optimization simply pause." },
   { q: "Do you offer refunds?", a: "If we haven't started the build, full refund. Once active, we don't refund completed work — but we'll make it right." },
   { q: "Is my data secure?", a: "We follow least-privilege access, encrypted credentials, isolated environments, and your data never trains third-party models. Full audit trail available." },
-  { q: "What industries do you serve?", a: "Dental practices — general, cosmetic, and specialty." },
   { q: "What's included in monthly maintenance?", a: "Uptime monitoring, model updates, integration patches, performance tuning, and a monthly review call." },
 ];
 
