@@ -39,6 +39,10 @@ export function FinalCTA() {
             </div>
             <div className="flex items-center gap-3">
               <Phone className="w-4 h-4 text-gold" />
+              <a href="tel:0419597967" className="hover:text-gold transition-colors">0419 597 967</a>
+            </div>
+            <div className="flex items-center gap-3">
+              <Phone className="w-4 h-4 text-gold" />
               <span>By appointment only</span>
             </div>
           </div>
