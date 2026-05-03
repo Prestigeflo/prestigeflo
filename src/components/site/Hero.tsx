@@ -36,14 +36,14 @@ export function Hero() {
 
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight">
             <span className="text-gold-gradient">AI Systems</span>{" "}
-            <span className="text-foreground">Built for Tradies</span>{" "}
-            <span className="text-silver">Who Refuse to Stay Stuck.</span>
+            <span className="text-foreground">Built for Dentists</span>{" "}
+            <span className="text-silver">Who Refuse to Lose Patients.</span>
           </h1>
 
           <p className="mt-8 text-lg text-silver/80 max-w-xl leading-relaxed">
-            We design and deploy custom AI automations for serious business owners — agents that qualify
-            leads, workflows that close gaps, and integrations that quietly run the parts of your business
-            you shouldn't be touching anymore.
+            We design and deploy custom AI automations for modern dental practices — voice agents that
+            answer every patient call, workflows that fill cancellations, and integrations that quietly
+            run the front desk so your team can focus on the chair.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
