@@ -18,10 +18,10 @@ export function FinalCTA() {
         <div>
           <div className="text-[10px] tracking-[0.4em] text-gold uppercase mb-5">Ready When You Are</div>
           <h2 className="font-serif text-5xl sm:text-6xl leading-[1.05] text-foreground">
-            Ready to put your business <span className="text-gold-gradient">on autopilot?</span>
+            Ready to put your front desk <span className="text-gold-gradient">on autopilot?</span>
           </h2>
           <p className="mt-6 text-silver/75 text-lg max-w-md leading-relaxed">
-            One call. Thirty minutes. We'll map exactly what to automate first and what it's worth to your bottom line — whether you hire us or not.
+            One call. Thirty minutes. We'll map exactly what to automate in your practice first — and what those missed calls and empty chairs are really costing you — whether you hire us or not.
           </p>
 
           <button
