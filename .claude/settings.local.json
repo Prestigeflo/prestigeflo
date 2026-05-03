@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(list\\(d.get\\('exports',{}\\).keys\\(\\)\\)[:20]\\)\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('peerDependencies',{}\\), indent=2\\)\\)\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('main',''\\), d.get\\('module',''\\)\\)\")",
+      "Bash(npm run *)",
+      "mcp__c0ced436-15e9-43da-9331-819d08a49535__deploy_to_vercel",
+      "Bash(vercel --version)",
+      "Bash(npx vercel *)",
+      "Bash(npx wrangler *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(z.get\\('id'\\), z.get\\('name'\\), z.get\\('status'\\)\\) for z in d.get\\('result',[]\\)]\")",
+      "Read(//Users/guillaumemauricewang/.wrangler/config/**)",
+      "Read(//Users/guillaumemauricewang/**)",
+      "Bash(curl -s 'https://api.cloudflare.com/client/v4/zones?name=prestigeflo.com' -H 'Authorization: Bearer SlVkX7d8WoGx8rSd34AQKtfIlYGsxKJO_uUWWljazNI.6i0eTDnsUbYblLvFGg02JjiV31z__0DP9rkHFVMZ7QM')",
+      "Bash(python3 -m json.tool)"
+    ]
+  }
+}

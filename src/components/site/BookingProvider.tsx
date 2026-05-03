@@ -49,13 +49,15 @@ export function BookingProvider({ children }: { children: ReactNode }) {
       {children}
       {isOpen && (
         <div
-         className="fixed inset-0 z-[100] bg-background/85 backdrop-blur-sm flex items-start justify-center p-4 pt-8 animate-fade-up"
+          className="fixed inset-0 z-[100] bg-background/85 backdrop-blur-sm overflow-y-auto animate-fade-up"
+          onClick={close}
           role="dialog"
           aria-modal="true"
           aria-label="Book a strategy call"
+          style={{ WebkitOverflowScrolling: "touch" }}
         >
           <div
-            className="relative w-full max-w-3xl h-[92vh] max-h-[92vh] rounded-2xl border border-gold/30 bg-surface shadow-elevated overflow-hidden flex flex-col"
+            className="relative w-full max-w-3xl mx-auto my-6 rounded-2xl border border-gold/30 bg-surface shadow-elevated flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -72,12 +74,11 @@ export function BookingProvider({ children }: { children: ReactNode }) {
               <h3 className="font-serif text-3xl text-gold-gradient">Pick a time that works for you.</h3>
               <p className="mt-2 text-silver/70 text-sm">30 minutes. No pitch — just a plan.</p>
             </div>
-            <div className="flex-1 min-h-0 overflow-auto bg-background/40">
+            <div className="bg-background/40">
               <iframe
                 src={CALENDAR_SRC}
                 title="Book a call"
-                style={{ width: "100%", height: "100%", minHeight: "900px", border: "none", display: "block" }}
-                scrolling="yes"
+                style={{ width: "100%", border: "none", minHeight: "900px", display: "block" }}
                 id="Puj705HsEF3Ywv6bf60E_lovable"
               />
             </div>
