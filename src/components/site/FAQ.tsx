@@ -3,8 +3,8 @@ import { Plus } from "lucide-react";
 import { SectionHeader } from "./Services";
 
 const faqs = [
-  { q: "How long does setup take?", a: "Most systems are fully built and deployed within 2–3 weeks of the discovery call. Complex multi-integration builds may take up to 4." },
-  { q: "What if I cancel?", a: "Cancel anytime with 30 days notice. The system keeps running — you keep ownership. Maintenance and optimization simply pause." },
+  { q: "How long does setup take?", a: "Most systems are fully built and deployed within 1–2 weeks of the discovery call." },
+  { q: "What if I cancel?", a: "Cancel anytime with 30 days notice." },
   { q: "Do you offer refunds?", a: "If we haven't started the build, full refund. Once active, we don't refund completed work — but we'll make it right." },
   { q: "Is my data secure?", a: "We follow least-privilege access, encrypted credentials, isolated environments, and your data never trains third-party models. Full audit trail available." },
   { q: "What's included in monthly maintenance?", a: "Uptime monitoring, model updates, integration patches, performance tuning, and a monthly review call." },
