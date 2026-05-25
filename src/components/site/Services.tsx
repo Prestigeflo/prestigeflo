@@ -3,18 +3,18 @@ import { PhoneCall, CalendarClock, Target } from "lucide-react";
 const services = [
   {
     icon: PhoneCall,
-    title: "24/7 AI Voice Agent",
-    body: "Answers every call in your business voice — day, night, weekends. No missed calls. No voicemail. No lost jobs.",
+    title: "24/7 AI Reception",
+    body: "Answers every patient call in your practice voice — lunch breaks, after hours, weekends. No missed calls. No voicemail. No patients lost to the practice down the road.",
   },
   {
     icon: Target,
-    title: "Lead Qualification",
-    body: "Every caller gets asked the right questions — job type, location, urgency, budget — so you only hear about the ones worth your time.",
+    title: "New Patient Screening",
+    body: "Every caller gets asked the right questions — reason for visit, insurance, urgency, location — so emergencies get prioritised and your team only handles the calls that need a human.",
   },
   {
     icon: CalendarClock,
-    title: "Automated Booking",
-    body: "Qualified jobs go straight into your calendar with confirmation texts sent to the customer. You wake up to a booked day.",
+    title: "Automated Booking & Recall",
+    body: "Appointments go straight into your practice management software with SMS confirmations and reminders. Cancellations get filled automatically from your recall list.",
   },
 ];
 
@@ -26,7 +26,7 @@ export function Services() {
         <SectionHeader
           eyebrow="Services"
           title="One system. Three things it does perfectly."
-          subtitle="Built around the AI voice agent that runs the front of your business — so you can stay on the tools."
+          subtitle="Built around the AI voice agent that runs your front desk — so your team can stay focused on the chair."
         />
 
         <div className="grid md:grid-cols-3 gap-6 mt-16">

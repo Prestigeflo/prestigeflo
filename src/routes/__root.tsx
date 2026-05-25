@@ -33,11 +33,13 @@ export const Route = createRootRoute({
       { name: "description", content: "Custom AI systems built for operators who refuse to stay stuck. Lead qualification, workflow automation, and AI agents — fully integrated, fully owned." },
       { name: "author", content: "PrestigeFlo Systems" },
       { property: "og:title", content: "PrestigeFlo Systems — AI Automation for Serious Operators" },
-      { property: "og:description", content: "Custom AI systems built for operators who refuse to stay stuck." },
+      { property: "og:description", content: "Custom AI systems built for operators who refuse to stay stuck. Lead qualification, workflow automation, and AI agents — fully integrated, fully owned." },
       { property: "og:type", content: "website" },
       { property: "og:image", content: "/prestigeflo-logo.png" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: "/prestigeflo-logo.png" },
+      { name: "twitter:title", content: "PrestigeFlo Systems — AI Automation for Serious Operators" },
+      { name: "twitter:description", content: "Custom AI systems built for operators who refuse to stay stuck. Lead qualification, workflow automation, and AI agents — fully integrated, fully owned." },
     ],
     links: [
       {
