@@ -33,7 +33,7 @@ export function Nav() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between h-20">
         {/* Logo */}
         <a href="#top" className="flex items-center">
-          <img src={logo} alt="PrestigeFlo" className="h-20 w-20 object-contain" style={{ mixBlendMode: "lighten" }} />
+          <img src={logo} alt="PrestigeFlo" className="h-20 w-20 object-contain" style={{ mixBlendMode: "screen", filter: "brightness(1.1) contrast(1.1)" }} />
         </a>
 
         {/* Desktop nav */}
