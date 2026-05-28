@@ -1,72 +1,173 @@
-import { ArrowRight, Play, Sparkles } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { useBooking } from "./BookingProvider";
 
 export function Hero() {
-  const { open: openBooking } = useBooking();
+  const { open } = useBooking();
+
   return (
-    <section id="top" className="relative min-h-screen flex items-center overflow-hidden circuit-bg pt-28 pb-20">
-      {/* Particles */}
+    <section
+      id="top"
+      className="relative min-h-screen flex items-center overflow-hidden"
+    >
+      <div className="absolute inset-0 bg-background" />
+      <div className="absolute inset-0 circuit-bg opacity-100 pointer-events-none" />
+
+      {/* Warm glow — upper left */}
+      <div
+        className="absolute pointer-events-none"
+        style={{
+          top: "-10%",
+          left: "-5%",
+          width: "70%",
+          height: "80%",
+          background:
+            "radial-gradient(ellipse at 30% 20%, oklch(0.62 0.11 58 / 0.22), transparent 60%)",
+        }}
+      />
+      {/* Floor bounce */}
+      <div
+        className="absolute bottom-0 left-0 right-0 pointer-events-none"
+        style={{
+          height: "40%",
+          background:
+            "radial-gradient(ellipse at 40% 100%, oklch(0.45 0.08 52 / 0.14), transparent 65%)",
+        }}
+      />
+
+      {/* Right-side visual — desktop */}
+      <div
+        className="hidden md:block absolute top-0 right-0 h-full"
+        style={{
+          width: "55%",
+          clipPath: "polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        }}
+      >
+        <div className="absolute inset-0 circuit-bg opacity-40" />
+        {/* Floating metric cards */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 px-16 pt-20">
+          {[
+            { v: "80%", label: "Faster response time" },
+            { v: "$14k+", label: "Average monthly savings" },
+            { v: "10+ hrs", label: "Reclaimed per week" },
+          ].map((m) => (
+            <div
+              key={m.label}
+              className="w-full max-w-xs border border-gold/20 bg-background/60 backdrop-blur-sm px-7 py-5"
+            >
+              <div className="font-display text-4xl text-gold-gradient leading-none mb-1">
+                {m.v}
+              </div>
+              <div className="text-[11px] tracking-[0.25em] text-silver/50 uppercase">
+                {m.label}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/20 to-transparent" />
+      </div>
+
+      {/* Floating particles */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(18)].map((_, i) => (
+        {[...Array(8)].map((_, i) => (
           <span
             key={i}
-            className="absolute rounded-full bg-gold/40 animate-float-slow"
+            className="absolute rounded-full animate-float-slow"
             style={{
-              width: `${2 + (i % 3)}px`,
-              height: `${2 + (i % 3)}px`,
-              top: `${(i * 53) % 100}%`,
-              left: `${(i * 37) % 100}%`,
-              animationDelay: `${i * 0.4}s`,
-              animationDuration: `${6 + (i % 5)}s`,
+              width: `${1.5 + (i % 2)}px`,
+              height: `${1.5 + (i % 2)}px`,
+              background: `oklch(0.62 0.11 58 / ${0.2 + (i % 3) * 0.1})`,
+              top: `${(i * 73) % 100}%`,
+              left: `${(i * 41) % 46}%`,
+              animationDelay: `${i * 0.7}s`,
+              animationDuration: `${8 + (i % 5)}s`,
             }}
           />
         ))}
       </div>
 
-      {/* Radial glow */}
-      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full opacity-50"
-           style={{ background: "var(--gradient-radial-gold)" }} />
+      {/* Content */}
+      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-10 w-full pt-24 pb-28">
+        <div className="max-w-[580px] animate-fade-up">
 
-      <div className="relative mx-auto max-w-5xl px-6 lg:px-10 text-center">
-        <div className="animate-fade-up mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold/30 bg-gold/5 text-xs tracking-[0.25em] text-gold uppercase mb-8">
-            <Sparkles className="w-3.5 h-3.5" /> Currently Accepting New Clients
+          {/* Eyebrow */}
+          <div className="inline-flex items-center gap-3 mb-10">
+            <span className="h-px w-10 bg-gold" />
+            <span
+              className="text-[10px] tracking-[0.48em] uppercase font-medium"
+              style={{ color: "var(--amber)" }}
+            >
+              AI Receptionist Agency
+            </span>
           </div>
 
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight">
-            <span className="text-gold-gradient">AI Systems</span>{" "}
-            <span className="text-foreground">Built for Dentists</span>{" "}
-            <span className="text-silver">Who Refuse to Lose Patients.</span>
+          {/* Headline */}
+          <h1 className="font-display leading-[0.88]">
+            <span className="block text-[clamp(3.5rem,11vw,8rem)] text-foreground">
+              NEVER
+            </span>
+            <span className="block text-[clamp(3.5rem,11vw,8rem)] text-gold-gradient">
+              MISS A CALL.
+            </span>
+            <span className="block text-[clamp(3.5rem,11vw,8rem)] text-foreground">
+              NEVER LOSE
+            </span>
+            <span
+              className="block text-[clamp(3.5rem,11vw,8rem)]"
+              style={{ color: "var(--silver)" }}
+            >
+              A CUSTOMER.
+            </span>
           </h1>
 
-          <p className="mt-8 text-lg text-silver/80 max-w-2xl mx-auto leading-relaxed">
-            We design and deploy custom AI automations for modern dental practices — voice agents that
-            answer every patient call, workflows that fill cancellations, and integrations that quietly
-            run the front desk so your team can focus on the chair.
+          {/* Sub */}
+          <p
+            className="mt-9 text-[15px] max-w-sm leading-relaxed tracking-wide"
+            style={{ color: "oklch(0.78 0.022 65 / 0.65)" }}
+          >
+            We build and manage AI phone receptionists for businesses that
+            can't afford to miss a call. Every inbound call answered, every
+            booking captured — 24/7, without adding a single person to payroll.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          {/* CTAs */}
+          <div className="mt-10 flex flex-wrap gap-4">
             <button
-              type="button"
-              onClick={openBooking}
-              className="group inline-flex items-center gap-2 px-7 py-4 rounded-full bg-gold-gradient text-black font-medium tracking-wide shadow-gold hover:shadow-gold-soft transition-all hover:-translate-y-0.5"
+              onClick={open}
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-gold-gradient text-black text-[11px] font-bold tracking-[0.28em] uppercase shadow-gold hover:shadow-gold-soft hover:-translate-y-0.5 transition-all"
             >
               Book a Free Strategy Call
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
             <a
               href="#services"
-              className="inline-flex items-center gap-2 px-7 py-4 rounded-full border border-gold/50 text-gold tracking-wide hover:bg-gold/10 transition-all"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 border text-[11px] tracking-[0.28em] uppercase transition-all hover:bg-gold/10"
+              style={{
+                borderColor: "oklch(0.50 0.22 27 / 0.35)",
+                color: "var(--gold)",
+              }}
             >
-              <Play className="w-4 h-4" /> See What We Build
+              See How It Works
             </a>
           </div>
 
-          <div className="mt-12 flex items-center justify-center gap-6 text-xs tracking-[0.2em] uppercase text-silver/50">
-            <span>Full system ownership</span>
-          </div>
+          {/* Trust line */}
+          <p
+            className="mt-12 text-[10px] tracking-[0.22em] uppercase"
+            style={{ color: "oklch(0.78 0.022 65 / 0.45)" }}
+          >
+            Trades · Clinics · Salons · Real Estate · Hospitality
+          </p>
         </div>
       </div>
+
+      {/* Scroll hint */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-25">
+        <ChevronDown
+          className="w-4 h-4 animate-bounce"
+          style={{ color: "var(--silver)" }}
+        />
+      </div>
+
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
     </section>
   );
 }
