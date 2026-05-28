@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import logo from "@/assets/prestigeflo-logo.png";
 import { useBooking } from "./BookingProvider";
+import logo from "@/assets/prestigeflo-logo.png";
 
 const links = [
   { href: "#services", label: "Services" },
-  { href: "#process", label: "Process" },
   { href: "#pricing", label: "Pricing" },
+  { href: "#process", label: "Why Us" },
+  { href: "#about", label: "About" },
   { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Contact" },
 ];
 
 export function Nav() {
@@ -26,25 +26,23 @@ export function Nav() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "backdrop-blur-xl bg-background/80 border-b border-gold/20"
+          ? "backdrop-blur-xl bg-background/92 border-b border-gold/20"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between h-20">
-        <a href="#top" className="flex items-center gap-3 group">
-          <img src={logo} alt="PrestigeFlo Systems" className="h-11 w-11 object-contain" />
-          <div className="hidden sm:block leading-tight">
-            <div className="font-serif text-lg text-gold-gradient tracking-wide">PrestigeFlo</div>
-            <div className="text-[10px] tracking-[0.3em] text-silver/70 uppercase">AI Agency</div>
-          </div>
+        {/* Logo */}
+        <a href="#top" className="flex items-center">
+          <img src={logo} alt="PrestigeFlo" className="h-14 w-14 object-contain" />
         </a>
 
+        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-9">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm tracking-wide text-silver/80 hover:text-gold transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-px after:bg-gold-gradient after:transition-all hover:after:w-full"
+              className="text-[11px] tracking-[0.22em] uppercase text-silver/70 hover:text-gold transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-px after:bg-gold-gradient after:transition-all hover:after:w-full"
             >
               {l.label}
             </a>
@@ -52,19 +50,26 @@ export function Nav() {
         </nav>
 
         <button
-          type="button"
           onClick={openBooking}
-          className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gold/50 text-gold text-sm tracking-wide hover:bg-gold-gradient hover:text-black hover:border-transparent hover:shadow-gold-soft transition-all"
+          className="hidden md:inline-flex items-center gap-2 px-6 py-2.5 bg-gold-gradient text-black text-[11px] font-bold tracking-[0.22em] uppercase shadow-gold hover:shadow-gold-soft hover:-translate-y-0.5 transition-all"
         >
-          Book a Call
+          Free Strategy Call
         </button>
 
+        {/* Mobile hamburger */}
         <button
           aria-label="Open menu"
           className="md:hidden text-silver"
           onClick={() => setOpen((v) => !v)}
         >
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+          >
             {open ? (
               <path strokeLinecap="round" d="M6 6l12 12M6 18L18 6" />
             ) : (
@@ -74,28 +79,25 @@ export function Nav() {
         </button>
       </div>
 
+      {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-gold/15 bg-background/95 backdrop-blur-xl">
-          <div className="px-6 py-6 flex flex-col gap-4">
+        <div className="md:hidden border-t border-gold/15 bg-background/97 backdrop-blur-xl">
+          <div className="px-6 py-6 flex flex-col gap-5">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-silver hover:text-gold text-base tracking-wide"
+                className="text-silver/80 hover:text-gold text-sm tracking-[0.22em] uppercase transition-colors"
               >
                 {l.label}
               </a>
             ))}
             <button
-              type="button"
-              onClick={() => {
-                setOpen(false);
-                openBooking();
-              }}
-              className="mt-2 inline-flex justify-center px-5 py-3 rounded-full bg-gold-gradient text-black font-medium"
+              onClick={() => { setOpen(false); openBooking(); }}
+              className="mt-2 inline-flex justify-center px-5 py-3.5 bg-gold-gradient text-black text-sm font-bold tracking-[0.22em] uppercase"
             >
-              Book a Call
+              Free Strategy Call
             </button>
           </div>
         </div>
