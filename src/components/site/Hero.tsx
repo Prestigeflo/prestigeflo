@@ -43,26 +43,6 @@ export function Hero() {
         }}
       >
         <div className="absolute inset-0 circuit-bg opacity-40" />
-        {/* Floating metric cards */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 px-16 pt-20">
-          {[
-            { v: "80%", label: "Faster response time" },
-            { v: "$14k+", label: "Average monthly savings" },
-            { v: "10+ hrs", label: "Reclaimed per week" },
-          ].map((m) => (
-            <div
-              key={m.label}
-              className="w-full max-w-xs border border-gold/20 bg-background/60 backdrop-blur-sm px-7 py-5"
-            >
-              <div className="font-display text-4xl text-gold-gradient leading-none mb-1">
-                {m.v}
-              </div>
-              <div className="text-[11px] tracking-[0.25em] text-silver/50 uppercase">
-                {m.label}
-              </div>
-            </div>
-          ))}
-        </div>
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/20 to-transparent" />
       </div>
 
