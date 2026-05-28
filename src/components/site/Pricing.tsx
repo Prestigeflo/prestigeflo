@@ -108,7 +108,8 @@ export function Pricing() {
           </div>
 
           {/* Website Build Card */}
-          <div className="relative rounded-2xl border border-gold/25 bg-surface overflow-hidden h-full flex flex-col">
+          <div className="relative rounded-2xl p-px" style={{ background: "linear-gradient(135deg, #dc2626 0%, #f87171 45%, #dc2626 100%)", boxShadow: "0 10px 40px -10px rgba(220,38,38,0.45)" }}>
+            <div className="rounded-2xl bg-surface overflow-hidden h-full flex flex-col">
             <div className="absolute inset-0 circuit-bg opacity-20" />
             <div className="relative flex flex-col h-full px-8 py-10">
               <div className="text-[10px] tracking-[0.4em] text-gold uppercase mb-3">
@@ -156,11 +157,13 @@ export function Pricing() {
               <button
                 type="button"
                 onClick={open}
-                className="group flex items-center justify-center gap-2 w-full px-7 py-4 border border-gold/45 text-gold text-[11px] font-bold tracking-[0.22em] uppercase hover:bg-gold/8 hover:border-gold/70 hover:-translate-y-0.5 transition-all mt-auto"
+                className="group flex items-center justify-center gap-2 w-full px-7 py-4 text-white text-[11px] font-bold tracking-[0.22em] uppercase hover:-translate-y-0.5 transition-all mt-auto"
+                style={{ background: "linear-gradient(135deg, #dc2626 0%, #f87171 45%, #dc2626 100%)", boxShadow: "0 4px 20px -4px rgba(220,38,38,0.5)" }}
               >
                 Get Your Website Built
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </button>
+            </div>
             </div>
           </div>
         </div>
