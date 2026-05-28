@@ -22,6 +22,15 @@ const websiteFeatures = [
   "1 edit included per month + security updates maintained",
 ];
 
+const websiteFeatures = [
+  "Custom design tailored to your brand, colours & style",
+  "Fully responsive — desktop, tablet & mobile",
+  "Up to 5 pages (Home, Services, Pricing, About, Contact)",
+  "Booking & contact form integration",
+  "Social media links & Google Maps embed",
+  "1 small edit included per month",
+];
+
 export function Pricing() {
   const { open } = useBooking();
 
