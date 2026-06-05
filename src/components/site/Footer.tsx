@@ -1,4 +1,4 @@
-import { Mail, Instagram, Linkedin } from "lucide-react";
+import { Mail } from "lucide-react";
 import { useBooking } from "./BookingProvider";
 
 export function Footer() {
@@ -121,27 +121,6 @@ export function Footer() {
               ))}
             </ul>
 
-            <div className="text-[10px] tracking-[0.35em] text-gold uppercase mb-3 mt-7">
-              Follow Us
-            </div>
-            <div className="flex gap-3">
-              <a
-                href="https://instagram.com/prestigeflo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 border border-gold/25 flex items-center justify-center text-silver/45 hover:text-gold hover:border-gold/60 transition-all hover:-translate-y-0.5"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a
-                href="https://linkedin.com/company/prestigeflo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 border border-gold/25 flex items-center justify-center text-silver/45 hover:text-gold hover:border-gold/60 transition-all hover:-translate-y-0.5"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-            </div>
           </div>
 
           {/* Contact */}
