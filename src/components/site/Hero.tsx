@@ -82,17 +82,17 @@ export function Hero() {
 
           {/* Headline */}
           <h1 className="font-display leading-[0.88]">
-            <span className="block text-[clamp(3.5rem,11vw,8rem)] text-foreground">
+            <span className="block text-[clamp(1.75rem,5.5vw,4rem)] text-foreground">
               NEVER
             </span>
-            <span className="block text-[clamp(3.5rem,11vw,8rem)] text-gold-gradient">
+            <span className="block text-[clamp(1.75rem,5.5vw,4rem)] text-gold-gradient">
               MISS A CALL.
             </span>
-            <span className="block text-[clamp(3.5rem,11vw,8rem)] text-foreground">
+            <span className="block text-[clamp(1.75rem,5.5vw,4rem)] text-foreground">
               NEVER LOSE
             </span>
             <span
-              className="block text-[clamp(3.5rem,11vw,8rem)]"
+              className="block text-[clamp(1.75rem,5.5vw,4rem)]"
               style={{ color: "var(--silver)" }}
             >
               A CUSTOMER.
