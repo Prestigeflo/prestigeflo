@@ -22,6 +22,16 @@ const websiteFeatures = [
   "1 edit included per month + security updates maintained",
 ];
 
+const crmFeatures = [
+  "Complete CRM setup, configuration & management",
+  "Automated invoicing & payment collection",
+  "Automated email & SMS follow-ups",
+  "Online booking & job scheduling",
+  "Custom website build included",
+  "AI receptionist included",
+  "Ongoing management & priority support",
+];
+
 
 export function Pricing() {
   const { open } = useBooking();
@@ -41,12 +51,87 @@ export function Pricing() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeader
           eyebrow="Packages"
-          title="TWO SERVICES."
+          title="THREE SERVICES."
           titleAccent="ONE TEAM."
           subtitle="No tiers, no upsells, no surprise fees. Either we're a fit or we're not."
         />
 
-        <div className="mt-16 grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        {/* Full CRM Setup — flagship card */}
+        <div className="mt-16 max-w-5xl mx-auto">
+          <div
+            className="relative rounded-2xl p-px"
+            style={{
+              background: "linear-gradient(135deg, #1d4ed8 0%, #60a5fa 45%, #1d4ed8 100%)",
+              boxShadow: "0 12px 48px -12px rgba(37,99,235,0.55)",
+            }}
+          >
+            <div className="rounded-2xl bg-surface px-8 py-10 relative overflow-hidden">
+              <div className="absolute inset-0 circuit-bg opacity-20" />
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  background:
+                    "radial-gradient(ellipse at 50% 0%, rgba(37,99,235,0.16), transparent 55%)",
+                }}
+              />
+              <div className="relative flex flex-col md:flex-row md:items-center gap-8">
+                <div className="flex-1">
+                  <div className="text-[10px] tracking-[0.4em] uppercase mb-3" style={{ color: "#60a5fa" }}>
+                    Everything, done for you
+                  </div>
+                  <h3 className="font-display text-3xl tracking-wider text-gold-gradient mb-2">
+                    FULL CRM SETUP
+                  </h3>
+                  <p className="text-silver/65 text-sm mb-6 leading-relaxed">
+                    All your invoicing, automated email &amp; SMS, scheduling, website, and AI
+                    receptionist — fully set up and managed under one roof.
+                  </p>
+                  <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-3">
+                    {crmFeatures.map((f) => (
+                      <li key={f} className="flex items-start gap-3">
+                        <span
+                          className="mt-0.5 w-4 h-4 flex items-center justify-center flex-shrink-0"
+                          style={{ border: "1px solid rgba(96,165,250,0.5)", background: "rgba(37,99,235,0.12)" }}
+                        >
+                          <Check className="w-2.5 h-2.5" strokeWidth={2.5} style={{ color: "#60a5fa" }} />
+                        </span>
+                        <span className="text-silver/75 text-[13px] leading-snug">{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="text-center md:text-right md:pl-8 md:border-l md:self-stretch md:flex md:flex-col md:justify-center"
+                     style={{ borderColor: "rgba(96,165,250,0.25)" }}>
+                  <div className="font-display text-4xl text-foreground tracking-wider">
+                    $7,000
+                  </div>
+                  <div className="text-silver/50 text-xs mt-1 tracking-wide">AUD · setup</div>
+                  <div className="font-display text-2xl tracking-wider mt-4" style={{ color: "#93c5fd" }}>
+                    + $300<span className="text-sm"> /mo</span>
+                  </div>
+                  <div className="text-silver/50 text-xs mt-1 mb-6 tracking-wide">
+                    AUD · per team member
+                  </div>
+                  <button
+                    type="button"
+                    onClick={open}
+                    className="group flex items-center justify-center gap-2 w-full md:w-auto px-7 py-4 text-white text-[11px] font-bold tracking-[0.22em] uppercase hover:-translate-y-0.5 transition-all"
+                    style={{
+                      background: "linear-gradient(135deg, #1d4ed8 0%, #60a5fa 45%, #1d4ed8 100%)",
+                      boxShadow: "0 4px 20px -4px rgba(37,99,235,0.55)",
+                    }}
+                  >
+                    Book Your Strategy Call
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-6 grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
 
           {/* AI Receptionist Card */}
           <div className="relative rounded-2xl p-px bg-gold-gradient shadow-gold">
