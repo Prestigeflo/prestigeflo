@@ -12,25 +12,12 @@ export function Hero() {
       <div className="absolute inset-0 bg-background" />
       <div className="absolute inset-0 circuit-bg opacity-100 pointer-events-none" />
 
-      {/* Warm glow — upper left */}
+      {/* Purple light glow — brighter in the centre, fading to the sides */}
       <div
-        className="absolute pointer-events-none"
+        className="absolute inset-0 pointer-events-none"
         style={{
-          top: "-10%",
-          left: "-5%",
-          width: "70%",
-          height: "80%",
           background:
-            "radial-gradient(ellipse at 30% 20%, oklch(0.62 0.11 58 / 0.22), transparent 60%)",
-        }}
-      />
-      {/* Floor bounce */}
-      <div
-        className="absolute bottom-0 left-0 right-0 pointer-events-none"
-        style={{
-          height: "40%",
-          background:
-            "radial-gradient(ellipse at 40% 100%, oklch(0.45 0.08 52 / 0.14), transparent 65%)",
+            "radial-gradient(ellipse 70% 75% at 50% 0%, oklch(0.44 0.16 305 / 0.62), transparent 70%)",
         }}
       />
 

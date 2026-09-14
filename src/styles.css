@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
@@ -6,8 +6,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * PrestigeFlo Systems — Luxury Tech Design System
- * Black + metallic gold + brushed silver. Premium, exclusive, confident.
+ * Razor Boys Barber Shop — Moorooka
+ * Deep walnut + aged parchment + crimson. Like stepping inside a premium shop.
  */
 
 @theme inline {
@@ -58,49 +58,56 @@
   --color-electric: var(--electric);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
-  --font-serif: "Space Grotesk", system-ui, sans-serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --color-amber: var(--amber);
+  --font-display: "Big Shoulders Display", system-ui, sans-serif;
+  --font-serif: "Big Shoulders Display", system-ui, sans-serif;
+  --font-sans: "Outfit", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
 :root {
-  --radius: 0.5rem;
+  --radius: 0rem;
 
-  /* Brand surfaces */
-  --background: oklch(0.06 0 0);            /* #0A0A0A near-black */
-  --surface: oklch(0.10 0 0);               /* #141414 alt sections */
-  --surface-2: oklch(0.14 0.005 80);        /* slightly warmer card surface */
-  --foreground: oklch(0.95 0.005 80);       /* #E5E5E5 off-white */
+  /* ─── Wood tones — dark walnut & mahogany ─── */
+  --background:  oklch(0.085 0.045 305); /* dark purple (edge) */
+  --surface:     oklch(0.15 0.058 305);  /* dark purple surface */
+  --surface-2:   oklch(0.19 0.062 307);  /* medium purple */
 
-  /* Metallic gold */
-  --gold: oklch(0.78 0.13 86);              /* #D4AF37 */
-  --gold-soft: oklch(0.72 0.11 82);         /* #C9A961 */
-  --gold-deep: oklch(0.55 0.10 78);         /* darker gold for borders */
+  /* ─── Warm parchment / aged paper text ─── */
+  --foreground:  oklch(0.93 0.022 72);   /* warm cream    ~#F0E6CF */
 
-  /* Brushed silver */
-  --silver: oklch(0.82 0.005 80);           /* #C0C0C0 */
+  /* ─── Metallic gold accent ─── */
+  --gold:        oklch(0.78 0.13 86);    /* #D4AF37 metallic gold */
+  --gold-soft:   oklch(0.72 0.11 82);    /* #C9A961 softer gold   */
+  --gold-deep:   oklch(0.55 0.10 78);    /* darker gold for borders */
 
-  /* Electric circuit accent */
-  --electric: oklch(0.55 0.18 275);         /* #4A5FBF */
+  /* ─── Warm parchment / aged leather (replaces "silver") ─── */
+  --silver:      oklch(0.78 0.022 65);   /* aged parchment ~#C9B898 */
 
-  /* Semantic mapping */
-  --card: var(--surface);
-  --card-foreground: var(--foreground);
-  --popover: var(--surface);
+  /* ─── Warm amber — the lamp glow ─── */
+  --amber:       oklch(0.62 0.11 58);    /* warm amber light ~#C08030 */
+
+  /* ─── Dark amber (replaces electric) ─── */
+  --electric:    oklch(0.42 0.065 52);   /* dark amber for depth */
+
+  /* ─── Semantic mapping ─── */
+  --card:              var(--surface);
+  --card-foreground:   var(--foreground);
+  --popover:           var(--surface);
   --popover-foreground: var(--foreground);
-  --primary: var(--gold);
-  --primary-foreground: oklch(0.06 0 0);
-  --secondary: oklch(0.16 0.005 80);
+  --primary:           var(--gold);
+  --primary-foreground: oklch(0.95 0.010 70);
+  --secondary:         oklch(0.18 0.035 50);
   --secondary-foreground: var(--silver);
-  --muted: oklch(0.14 0.005 80);
-  --muted-foreground: oklch(0.65 0.01 80);
-  --accent: var(--gold);
-  --accent-foreground: oklch(0.06 0 0);
-  --destructive: oklch(0.6 0.22 25);
+  --muted:             oklch(0.16 0.030 48);
+  --muted-foreground:  oklch(0.58 0.018 60);
+  --accent:            var(--gold);
+  --accent-foreground: oklch(0.95 0.010 70);
+  --destructive:       oklch(0.6 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.78 0.13 86 / 0.18);
-  --input: oklch(0.78 0.13 86 / 0.22);
-  --ring: var(--gold);
+  --border:            oklch(0.78 0.13 86 / 0.20);
+  --input:             oklch(0.78 0.13 86 / 0.24);
+  --ring:              var(--gold);
   --chart-1: var(--gold);
   --chart-2: var(--silver);
   --chart-3: var(--electric);
@@ -109,19 +116,23 @@
   --sidebar: var(--surface);
   --sidebar-foreground: var(--foreground);
   --sidebar-primary: var(--gold);
-  --sidebar-primary-foreground: oklch(0.06 0 0);
-  --sidebar-accent: oklch(0.14 0.005 80);
+  --sidebar-primary-foreground: oklch(0.95 0.010 70);
+  --sidebar-accent: oklch(0.16 0.030 48);
   --sidebar-accent-foreground: var(--silver);
-  --sidebar-border: oklch(0.78 0.13 86 / 0.18);
+  --sidebar-border: oklch(0.78 0.13 86 / 0.20);
   --sidebar-ring: var(--gold);
 
-  /* Gradients & shadows */
-  --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4D77A 45%, #C9A961 100%);
-  --gradient-gold-deep: linear-gradient(135deg, #8a6f1f 0%, #D4AF37 50%, #8a6f1f 100%);
+  /* ─── Gradients ─── */
+  --gradient-gold:        linear-gradient(135deg, #D4AF37 0%, #F4D77A 45%, #C9A961 100%);
+  --gradient-gold-deep:   linear-gradient(135deg, #8a6f1f 0%, #D4AF37 50%, #8a6f1f 100%);
   --gradient-radial-gold: radial-gradient(ellipse at center, oklch(0.78 0.13 86 / 0.18), transparent 70%);
-  --shadow-gold: 0 10px 40px -10px oklch(0.78 0.13 86 / 0.45);
-  --shadow-gold-soft: 0 0 30px oklch(0.78 0.13 86 / 0.25);
-  --shadow-elevated: 0 30px 80px -20px oklch(0 0 0 / 0.6);
+  --gradient-radial-amber: radial-gradient(ellipse at center, oklch(0.62 0.11 58 / 0.18), transparent 70%);
+
+  /* ─── Shadows ─── */
+  --shadow-gold:      0 10px 40px -10px oklch(0.78 0.13 86 / 0.55);
+  --shadow-gold-soft: 0 0 35px oklch(0.78 0.13 86 / 0.35);
+  --shadow-amber:     0 0 50px oklch(0.62 0.11 58 / 0.30);
+  --shadow-elevated:  0 30px 80px -20px oklch(0 0 0 / 0.80);
 }
 
 @layer base {
@@ -142,23 +153,25 @@
   }
 
   ::selection {
-    background: oklch(0.78 0.13 86 / 0.35);
+    background: oklch(0.50 0.22 27 / 0.40);
     color: oklch(0.98 0 0);
   }
 }
 
 @layer utilities {
+  .font-display {
+    font-family: "Big Shoulders Display", system-ui, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.01em;
+  }
+
   .font-serif {
-    font-family: var(--font-serif);
-    font-feature-settings: "ss01", "ss02";
-    letter-spacing: -0.02em;
+    font-family: "Big Shoulders Display", system-ui, sans-serif;
+    font-weight: 800;
   }
-  .font-sans {
-    font-family: var(--font-sans);
-  }
-  .font-mono {
-    font-family: var(--font-mono);
-  }
+
+  .font-sans  { font-family: "Outfit", system-ui, sans-serif; }
+  .font-mono  { font-family: var(--font-mono); }
 
   .text-gold-gradient {
     background: var(--gradient-gold);
@@ -168,76 +181,119 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .bg-gold-gradient {
-    background: var(--gradient-gold);
-  }
+  .bg-gold-gradient  { background: var(--gradient-gold); }
+  .shadow-gold       { box-shadow: var(--shadow-gold); }
+  .shadow-gold-soft  { box-shadow: var(--shadow-gold-soft); }
+  .shadow-amber      { box-shadow: var(--shadow-amber); }
 
   .border-gold {
     border-color: oklch(0.78 0.13 86 / 0.4);
   }
 
-  .shadow-gold {
-    box-shadow: var(--shadow-gold);
-  }
-
-  .shadow-gold-soft {
-    box-shadow: var(--shadow-gold-soft);
-  }
-
+  /* ─── Wood grain texture ───
+     Subtle horizontal grain lines + warm amber pool lights —
+     evokes dark walnut paneling under warm shop lamps.           */
   .circuit-bg {
     background-image:
-      linear-gradient(oklch(0.78 0.13 86 / 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, oklch(0.78 0.13 86 / 0.05) 1px, transparent 1px),
-      radial-gradient(circle at 20% 30%, oklch(0.55 0.18 275 / 0.08), transparent 40%),
-      radial-gradient(circle at 80% 70%, oklch(0.78 0.13 86 / 0.06), transparent 50%);
-    background-size: 60px 60px, 60px 60px, 100% 100%, 100% 100%;
+      /* Fine grain lines — nearly horizontal */
+      repeating-linear-gradient(
+        89.2deg,
+        transparent 0px,
+        transparent 7px,
+        oklch(0.65 0.048 70 / 0.06) 7px,
+        oklch(0.65 0.048 70 / 0.06) 8px
+      ),
+      /* Broader grain variation */
+      repeating-linear-gradient(
+        88.6deg,
+        transparent 0px,
+        transparent 28px,
+        oklch(0.50 0.038 65 / 0.05) 28px,
+        oklch(0.50 0.038 65 / 0.05) 30px
+      ),
+      /* Warm lamp glow — upper left corner */
+      radial-gradient(ellipse at 15% 20%, oklch(0.62 0.11 58 / 0.14), transparent 55%),
+      /* Warm fill — lower right */
+      radial-gradient(ellipse at 88% 82%, oklch(0.50 0.08 52 / 0.10), transparent 50%);
+    background-size: auto, auto, 100% 100%, 100% 100%;
+  }
+
+  /* Full warm-lamp section glow — for hero + CTA */
+  .warm-glow {
+    background-image:
+      radial-gradient(ellipse at 28% 42%, oklch(0.62 0.11 58 / 0.16), transparent 60%),
+      radial-gradient(ellipse at 75% 65%, oklch(0.45 0.07 50 / 0.12), transparent 55%);
+  }
+
+  /* Amber bottom accent bar */
+  .amber-line::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, oklch(0.62 0.11 58 / 0.55), transparent);
   }
 
   .hex-clip {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
 
+  .clip-diagonal-left {
+    clip-path: polygon(14% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
   @keyframes gold-pulse {
-    0%, 100% { box-shadow: 0 0 20px oklch(0.78 0.13 86 / 0.4), 0 0 0 0 oklch(0.78 0.13 86 / 0.4); }
-    50% { box-shadow: 0 0 40px oklch(0.78 0.13 86 / 0.6), 0 0 0 12px oklch(0.78 0.13 86 / 0); }
+    0%, 100% {
+      box-shadow: 0 0 22px oklch(0.78 0.13 86 / 0.45), 0 0 0 0 oklch(0.78 0.13 86 / 0.45);
+    }
+    50% {
+      box-shadow: 0 0 45px oklch(0.78 0.13 86 / 0.65), 0 0 0 14px oklch(0.78 0.13 86 / 0);
+    }
   }
-  .animate-gold-pulse {
-    animation: gold-pulse 5s ease-in-out infinite;
+  .animate-gold-pulse { animation: gold-pulse 4s ease-in-out infinite; }
+
+  @keyframes amber-flicker {
+    0%, 100% { opacity: 1; }
+    92%       { opacity: 0.92; }
+    94%       { opacity: 0.97; }
+    96%       { opacity: 0.90; }
   }
+  .animate-amber-flicker { animation: amber-flicker 6s ease-in-out infinite; }
 
   @keyframes float-slow {
-    0%, 100% { transform: translateY(0) translateX(0); opacity: 0.4; }
-    50% { transform: translateY(-20px) translateX(10px); opacity: 0.8; }
+    0%, 100% { transform: translateY(0) translateX(0); opacity: 0.30; }
+    50%       { transform: translateY(-16px) translateX(6px); opacity: 0.60; }
   }
-  .animate-float-slow {
-    animation: float-slow 8s ease-in-out infinite;
-  }
+  .animate-float-slow { animation: float-slow 9s ease-in-out infinite; }
 
   @keyframes shimmer {
-    0% { background-position: -200% 0; }
-    100% { background-position: 200% 0; }
+    0%   { background-position: -200% 0; }
+    100% { background-position:  200% 0; }
   }
   .animate-shimmer {
-    background: linear-gradient(90deg, transparent, oklch(0.78 0.13 86 / 0.3), transparent);
+    background: linear-gradient(90deg, transparent, oklch(0.62 0.11 58 / 0.25), transparent);
     background-size: 200% 100%;
-    animation: shimmer 3s linear infinite;
+    animation: shimmer 4s linear infinite;
   }
 
   @keyframes fade-up {
     from { opacity: 0; transform: translateY(24px); }
-    to { opacity: 1; transform: translateY(0); }
+    to   { opacity: 1; transform: translateY(0); }
   }
-  .animate-fade-up {
-    animation: fade-up 0.8s ease-out both;
+  .animate-fade-up { animation: fade-up 0.8s ease-out both; }
+
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
   }
+  .animate-spin-slow { animation: spin-slow 9s linear infinite; }
 
   @media (prefers-reduced-motion: reduce) {
     .animate-gold-pulse,
+    .animate-amber-flicker,
     .animate-float-slow,
     .animate-shimmer,
-    .animate-fade-up {
-      animation: none;
-    }
+    .animate-fade-up,
+    .animate-spin-slow { animation: none; }
     html { scroll-behavior: auto; }
   }
 }
