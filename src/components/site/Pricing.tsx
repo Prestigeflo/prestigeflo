@@ -108,10 +108,10 @@ export function Pricing() {
                   </div>
                   <div className="text-silver/50 text-xs mt-1 tracking-wide">AUD · setup</div>
                   <div className="font-display text-2xl tracking-wider mt-4" style={{ color: "#93c5fd" }}>
-                    + $300<span className="text-sm"> /mo</span>
+                    + $1,500<span className="text-sm"> /mo</span>
                   </div>
                   <div className="text-silver/50 text-xs mt-1 mb-6 tracking-wide">
-                    AUD · per team member
+                    AUD · per month
                   </div>
                   <button
                     type="button"
