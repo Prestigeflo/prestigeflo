@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useBooking } from "./BookingProvider";
-import logo from "@/assets/prestigeflo-logo.png";
+import logo from "@/assets/prestigeflo-emblem.png";
 
 const links = [
   { href: "#services", label: "Services" },
@@ -32,8 +32,11 @@ export function Nav() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between h-20">
         {/* Logo */}
-        <a href="#top" className="flex items-center">
-          <img src={logo} alt="PrestigeFlo" className="h-20 w-20 object-contain" style={{ mixBlendMode: "screen", filter: "brightness(1.1) contrast(1.1)" }} />
+        <a href="#top" className="flex items-center gap-2.5">
+          <img src={logo} alt="PrestigeFlo" className="h-14 w-14 object-contain" style={{ mixBlendMode: "screen", filter: "brightness(1.1) contrast(1.1)" }} />
+          <span className="font-display text-2xl tracking-wider text-foreground leading-none">
+            Prestige<span className="text-gold-gradient">Flo</span>
+          </span>
         </a>
 
         {/* Desktop nav */}
