@@ -169,13 +169,13 @@ export function Pricing() {
                 </div>
 
                 <div className="text-[10px] tracking-[0.3em] text-silver/60 uppercase mb-2 text-center">
-                  Teams of 3+
+                  Teams of 4
                 </div>
                 <div className="grid grid-cols-2 gap-3 mb-4 text-center">
                   <div className="border border-gold/20 bg-background/60 p-4">
                     <div className="text-[10px] tracking-[0.3em] text-silver/60 uppercase mb-1">Setup</div>
                     <div className="font-display text-3xl text-foreground tracking-wider">
-                      $1,250
+                      $1,500
                     </div>
                     <div className="text-silver/50 text-xs mt-1 tracking-wide">AUD · one-time</div>
                   </div>
