@@ -149,7 +149,7 @@ export function Pricing() {
                 </p>
 
                 <div className="text-[10px] tracking-[0.3em] text-silver/60 uppercase mb-2 text-center">
-                  Solo Operators &amp; Teams of 2
+                  Solo Operators · $250 per team member or calendar created
                 </div>
                 <div className="grid grid-cols-2 gap-3 mb-4 text-center">
                   <div className="border border-gold/20 bg-background/60 p-4">
