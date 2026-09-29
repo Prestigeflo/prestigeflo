@@ -155,7 +155,7 @@ export function Pricing() {
                   <div className="border border-gold/20 bg-background/60 p-4">
                     <div className="text-[10px] tracking-[0.3em] text-silver/60 uppercase mb-1">Setup</div>
                     <div className="font-display text-3xl text-foreground tracking-wider">
-                      $680
+                      $750
                     </div>
                     <div className="text-silver/50 text-xs mt-1 tracking-wide">AUD · one-time</div>
                   </div>
@@ -182,7 +182,7 @@ export function Pricing() {
                   <div className="border border-gold/40 bg-gold/5 p-4">
                     <div className="text-[10px] tracking-[0.3em] text-gold uppercase mb-1">Monthly</div>
                     <div className="font-display text-3xl text-gold-gradient tracking-wider">
-                      $997
+                      $1,000
                     </div>
                     <div className="text-silver/50 text-xs mt-1 tracking-wide">AUD · per month</div>
                   </div>
